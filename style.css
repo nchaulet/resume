@@ -1,10 +1,8 @@
 body {
 	font-size: 14px;
-	/*background-color: #FEFEE7;*/
 }
 
 .jumbotron {
-	/*background: none;*/
 	padding-bottom: 0;
 }
 
@@ -15,11 +13,17 @@ body {
 .jumbotron h1 {
 	font-size: 40px;
 	margin: 0;
+	color: inherit;
 }
 
 .jumbotron h2 {
 	font-size: 30px;
 	margin: 0;
+	color: inherit;
+}
+
+.social {
+	color: #475577;
 }
 
 h1, h2, h3, h4 {
@@ -32,8 +36,8 @@ h2 {
 	font-size: 24px;
 }
 
-a, h3 {
-	color: #54ACD2;
+a {
+	color: inherit;
 }
 
 section.row:first-of-type {
@@ -58,12 +62,12 @@ section .col-content {
 	padding-left: 20px;
 }
 
-section .col-content h3:first-of-type{
-	margin-top: 0;
+section h3 {
+	margin-top: 30px;
 }
 
-section .col-content h3{
-	margin-top: 20px;
+section .item:first-of-type h3{
+	margin-top: 0;
 }
 
 ul.keywords {
@@ -73,7 +77,7 @@ ul.keywords {
 
 ul.keywords li {
 	display: inline-block;
-	background: #54ACD2;
+	background: #E4E4E4;
 	margin: 2px;
 	padding: 5px;
 	width: auto;

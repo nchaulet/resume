@@ -10,7 +10,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
-	<link rel="stylesheet" href="style.css" />
+	<style>
+		{{css}}
+	</style>
 
 	</head>
 	<body>
@@ -132,7 +134,7 @@
 		{{#if resume.languages.length}}
 		<section id="languages" class="row">
 			<div class="col-md-3">
-				<h2>{{I18n 'title.language'}}</h2>
+				<h2><i class="fa fa-globe"></i> {{I18n 'title.language'}}</h2>
 			</div>
 			<div class="col-md-8">
 				<div class="col-content">
@@ -151,7 +153,7 @@
 		{{#if resume.interests.length}}
 		<section id="interests" class="row">
 			<div class="col-md-3">
-				<h2>Interests</h2>
+				<h2><i class="fa fa-coffee"></i> {{I18n 'title.interest'}}</h2>
 			</div>
 			<div class="col-md-8">
 				<div class="col-content">

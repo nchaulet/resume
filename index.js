@@ -8,10 +8,24 @@ I18n.translations["en"] = {
         work: 'Work',
         education: 'Education',
         skills: 'Skills',
-        language: 'Languages'
+        language: 'Languages',
+        interest: 'Interest'
     },
     now: 'Now'
 };
+
+I18n.translations["fr"] = {
+    title: {
+        work: 'Expériences',
+        education: 'Formations',
+        skills: 'Compétences',
+        language: 'Langues',
+        interest: 'Loisirs'
+    },
+    now: 'Aujourd\'hui'
+};
+
+I18n.locale = "fr";
 
 Handlebars.registerHelper('I18n',
   function(str){
@@ -36,8 +50,6 @@ Handlebars.registerHelper('datePeriod',
     }
   }
 );
-
-
 
 function render(resume) {
 	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
