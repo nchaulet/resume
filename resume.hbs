@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+	<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+	<link rel="stylesheet" href="style.css" />
+
+	</head>
+	<body>
+
+
+	<header class="jumbotron">
+		<div class="container text-center">
+			{{#resume.basics}}
+			<h1>{{name}}</h1>
+			<h2>{{label}}</h2>
+			<br/>
+			<div class="social">
+				<a href="mailto:{{email}}"><i class="fa fa-envelope fa-2x"></i></a>
+				{{#each profiles}}
+					<a href="{{url}}"><i class="fa fa-{{network}} fa-2x"> </i></a>
+				{{/each}}
+			</div>
+			{{/resume.basics}}
+		</div>
+	</header>
+	<div class="container">
+		{{#if resume.work.length}}
+		<section id="work" class="row">
+			<div class="col-md-3">
+				<h2><i class="fa fa-briefcase"></i> {{I18n 'title.work'}}</h2>
+			</div>
+			<div class="col-md-8">
+			<div class="col-content">
+				{{#each resume.work}}
+				<div class="item">
+					<h3 class="name">
+						{{position}} -
+						{{#if website }}
+							<a href="{{website}}">{{company}}</a>
+						{{else}}
+							{{company}}
+						{{/if}}
+					</h3>
+					<div class="date">
+						<i class="fa fa-clock-o icon-left"></i>
+						{{ datePeriod startDate endDate}}
+					</div>
+					{{#if summary}}
+					<div class="summary">
+						<p>{{summary}}</p>
+					</div>
+					{{/if}}
+					{{#if highlights.length}}
+					<ul class="highlights">
+						{{#each highlights}}
+						<li>{{.}}</li>
+						{{/each}}
+					</ul>
+					{{/if}}
+				</div>
+				{{/each}}
+			</div>
+			</div>
+		</section>
+		{{/if}}
+
+		{{#if resume.education.length}}
+		<section id="education" class="row">
+			<div class="col-md-3">
+				<h2><i class="fa fa-book"></i> {{I18n 'title.education'}}</h2>
+			</div>
+			<div class="col-md-8">
+			<div class="col-content">
+			{{#each resume.education}}
+			<div class="item">
+				<h3 class="area">
+					{{studyType}} {{area}}
+				</h3>
+				<div class="date">
+					<i class="fa fa-clock-o icon-left"></i>
+					{{ datePeriod startDate endDate}}
+				</div>
+				{{#if institution}}
+				<div class="institution">
+					{{institution}}
+				</div>
+				{{/if}}
+			</div>
+			{{/each}}
+			</div>
+			</div>
+		</section>
+		{{/if}}
+
+		{{#if resume.skills.length}}
+		<section id="skills" class="row">
+			<div class="col-md-3">
+				<h2><i class="fa fa-cog"></i> {{I18n 'title.skills'}}</h2>
+			</div>
+
+			<div class="col-md-8">
+				<div class="col-content">
+					{{#each resume.skills}}
+					<div class="item">
+						{{#if name}}
+						<h3 class="name">
+							{{name}}
+						</h3>
+						{{/if}}
+						{{#if keywords.length}}
+						<ul class="keywords">
+							{{#each keywords}}
+							<li>{{.}}</li>
+							{{/each}}
+						</ul>
+						{{/if}}
+					</div>
+					{{/each}}
+				</div>
+			</div>
+		</section>
+		{{/if}}
+
+		{{#if resume.languages.length}}
+		<section id="languages" class="row">
+			<div class="col-md-3">
+				<h2>{{I18n 'title.language'}}</h2>
+			</div>
+			<div class="col-md-8">
+				<div class="col-content">
+					{{#each resume.languages}}
+					<div class="item">
+						<div class="language">
+							{{language}} : <em>{{fluency}}</em>
+						</div>
+					</div>
+					{{/each}}
+				</div>
+			</div>
+		</section>
+		{{/if}}
+
+		{{#if resume.interests.length}}
+		<section id="interests" class="row">
+			<div class="col-md-3">
+				<h2>Interests</h2>
+			</div>
+			<div class="col-md-8">
+				<div class="col-content">
+					{{#each resume.interests}}
+					<div class="item">
+						{{#if name}}
+						<div class="name">
+							{{name}}
+							{{#if keywords.length}}
+								:
+								{{#each keywords}}
+								<span>{{.}}</span>
+								{{/each}}
+							{{/if}}
+						</div>
+						{{/if}}
+
+					</div>
+					{{/each}}
+				</div>
+			</div>
+		</section>
+		{{/if}}
+		<br/><br/>
+	</div>
+
+	</body>
+</html>
