@@ -1,0 +1,145 @@
+{
+  "basics": {
+    "name": "Nicolas Chaulet",
+    "label": "Développeur Web",
+    "picture": "http://www.gravatar.com/avatar/6ecd4df885e55b00bdd23bd53678aec8?s=150",
+    "email": "n.chaulet@gmail.com",
+    "website": "http://nchaulet.fr",
+    "summary": "Développeur Web",
+    "location": {
+      "city": "Lyon",
+      "countryCode": "FR"
+    },
+    "profiles": [
+      {
+        "network": "twitter",
+        "username": "n_chaulet",
+        "url": "https://twitter.com/n_chaulet"
+      },
+      {
+        "network": "github",
+        "username": "n_chaulet",
+        "url": "https://github.com/nchaulet"
+      },
+      {
+        "network": "linkedin",
+        "username": "nicolas-chaulet",
+        "url": "https://fr.linkedin.com/pub/nicolas-chaulet/81/150/331"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Mapado",
+      "position": "Développeur Web ENGLISH",
+      "website": "http://www.mapado.com",
+      "startDate": "2014-12-01",
+      "summary": "Développeur au sein de la startup Mapado",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Kptive Studio",
+      "position": "Développeur Web",
+      "website": "http://kptivestudio.com/fr/",
+      "startDate": "2014-09-01",
+      "endDate": "2014-12-01",
+      "summary": "Plateformisation d'un site d'e-commerce",
+      "highlights": [
+        "Développement d'API Rest (Symfony2)",
+        "Développement d'un backoffice en utilisant angularjs"
+      ]
+    },
+    {
+      "company": "Havana IT & APPS",
+      "position": "Développeur Web",
+      "website": "http://www.mapado.com",
+      "startDate": "2012-09-01",
+      "endDate": "2014-09-01",
+      "summary": "mission pour M6 Web, développement PHP (Symfony2), et Nodejs sur des sites.",
+      "highlights": [
+        "Développement sur des sites à fort traffic.",
+        "API Rest",
+        "Industrialisation (tests, intégration continue, ...)"
+      ]
+    },
+    {
+      "company": "SNCF",
+      "position": "Développeur",
+      "startDate": "2010-05-01",
+      "endDate": "2012-09-01",
+      "summary": "En stage, puis en alternance, Développement d'une application tablette pour le suivi RFID de pièces détachées. Et développement de plusieurs applications web"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Université d'auvergne, (Clermont-Ferrand, France)",
+      "area": "Génie logiciel, développement d'applications pour plateformes mobiles.",
+      "studyType": "Licence Professionnelle",
+      "startDate": "2011-09-01",
+      "endDate": "2012-08-31"
+    },
+    {
+      "institution": "Université d'auvergne, (Clermont-Ferrand, France)",
+      "area": "Informatique",
+      "studyType": "DUT",
+      "startDate": "2009-09-01",
+      "endDate": "2011-08-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend",
+      "keywords": [
+        "Javascript",
+        "ReactJS",
+        "AngularJS",
+        "HTML / CSS",
+        "Webperf"
+      ]
+    },
+    {
+      "name": "Backend",
+      "keywords": [
+        "PHP (Symfony2)",
+        "Node.js",
+        "Python",
+        "MongoDB",
+        "Redis",
+        "Mysql"
+      ]
+    },
+    {
+        "name": "Devops & Divers ",
+        "keywords": [
+            "Docker",
+            "Vagrant",
+            "Ansible",
+            "Méthodes agiles (SCRUM, Kanban)",
+            "Git"
+        ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Français",
+      "fluency": "Langue maternel"
+    },
+    {
+      "language": "Anglais",
+      "fluency": "Professionel"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Sport",
+      "keywords": [
+        "Escalade",
+        "Ski"
+      ]
+    },
+    {
+        "name": "Voyages"
+    }
+  ]
+}

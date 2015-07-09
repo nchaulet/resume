@@ -1,66 +1,13 @@
+var theme = require('./theme/index.js');
 var fs = require("fs");
-var Handlebars = require("handlebars");
-var I18n = require('i18n-js');
-var moment = require('moment');
 
-I18n.translations["en"] = {
-    title: {
-        work: 'Work',
-        education: 'Education',
-        skills: 'Skills',
-        language: 'Languages',
-        interest: 'Interest'
-    },
-    now: 'Now'
-};
+var langs = ['fr', 'en'];
+var defaultLang = 'fr';
 
-I18n.translations["fr"] = {
-    title: {
-        work: 'Expériences',
-        education: 'Formations',
-        skills: 'Compétences',
-        language: 'Langues',
-        interest: 'Loisirs'
-    },
-    now: 'Aujourd\'hui'
-};
+langs.forEach(function(lang) {
+    var resumeJson = require('./data/resume-' + lang + '.json');
 
-I18n.locale = "fr";
+    var fileName = 'index' + (lang == defaultLang ? '' : '-' + lang) + '.html';
+    fs.writeFileSync(__dirname + '/dist/' + fileName, theme.render(resumeJson, lang));
+});
 
-Handlebars.registerHelper('I18n',
-  function(str){
-    return I18n.t(str);
-  }
-);
-
-Handlebars.registerHelper('datePeriod',
-  function(startDate, endDate){
-    if (!endDate) {
-        endDate = I18n.t('now');
-
-        return moment(startDate).format('MM/YYYY') + ' - ' + endDate;
-    }
-
-    var startDate = moment(startDate);
-    var endDate = moment(endDate);
-    if (endDate.diff(startDate, 'months') > 8) {
-        return startDate.format('YYYY') + ' - ' + endDate.format('YYYY');
-    } else {
-        return startDate.format('MM/YYYY') + ' - ' + endDate.format('MM/YYYY');
-    }
-  }
-);
-
-function render(resume) {
-	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
-	var tpl = fs.readFileSync(__dirname + "/resume.hbs", "utf-8");
-
-	return Handlebars.compile(tpl)({
-		css: css,
-		resume: resume
-	});
-}
-
-module.exports = {
-	render: render
-};

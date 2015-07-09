@@ -4,3 +4,5 @@ resume.html
 resume.pdf
 .DS_Store
 index.html
+dist/*
+!.gitkeep
