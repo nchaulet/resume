@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Nicolas Chaulet",
-    "label": "Développeur Web",
+    "label": "Web Developer",
     "picture": "http://www.gravatar.com/avatar/6ecd4df885e55b00bdd23bd53678aec8?s=150",
     "email": "n.chaulet@gmail.com",
     "website": "http://nchaulet.fr",
-    "summary": "Développeur Web",
+    "summary": "Web Developer",
     "location": {
       "city": "Lyon",
       "countryCode": "FR"
@@ -31,58 +31,55 @@
   "work": [
     {
       "company": "Mapado",
-      "position": "Développeur Web ENGLISH",
+      "position": "Web Developer",
       "website": "http://www.mapado.com",
       "startDate": "2014-12-01",
-      "summary": "Développeur au sein de la startup Mapado",
+      "summary": "Working on www.mapado.com website.",
       "highlights": [
       ]
     },
     {
       "company": "Kptive Studio",
-      "position": "Développeur Web",
+      "position": "Web Developer",
       "website": "http://kptivestudio.com/fr/",
       "startDate": "2014-09-01",
       "endDate": "2014-12-01",
-      "summary": "Plateformisation d'un site d'e-commerce",
+      "summary": "Working as a web developer on e-commerce plateform (Symfony2, REST API, angularjs)",
       "highlights": [
-        "Développement d'API Rest (Symfony2)",
-        "Développement d'un backoffice en utilisant angularjs"
+        "Rest API (Symfony2)",
+        "Backoffice (AngularJS)"
       ]
     },
     {
       "company": "Havana IT & APPS",
-      "position": "Développeur Web",
+      "position": "Web Developer",
       "website": "http://www.mapado.com",
       "startDate": "2012-09-01",
       "endDate": "2014-09-01",
-      "summary": "mission pour M6 Web, développement PHP (Symfony2), et Nodejs sur des sites.",
+      "summary": "Working for M6 Web(TV channel), as a web developer on high load websites and REST API (Symfony2, nodejs) and front-end development.",
       "highlights": [
-        "Développement sur des sites à fort traffic.",
-        "API Rest",
-        "Industrialisation (tests, intégration continue, ...)"
       ]
     },
     {
       "company": "SNCF",
-      "position": "Développeur",
+      "position": "Web Developer",
       "startDate": "2010-05-01",
       "endDate": "2012-09-01",
-      "summary": "En stage, puis en alternance, Développement d'une application tablette pour le suivi RFID de pièces détachées. Et développement de plusieurs applications web"
+      "summary": "Working on Intranet and tablet application."
     }
   ],
   "education": [
     {
       "institution": "Université d'auvergne, (Clermont-Ferrand, France)",
-      "area": "Génie logiciel, développement d'applications pour plateformes mobiles.",
-      "studyType": "Licence Professionnelle",
+      "area": "Web and Mobile development",
+      "studyType": "Professional degree",
       "startDate": "2011-09-01",
       "endDate": "2012-08-31"
     },
     {
       "institution": "Université d'auvergne, (Clermont-Ferrand, France)",
-      "area": "Informatique",
-      "studyType": "DUT",
+      "area": "Computer science",
+      "studyType": "Technical Degree",
       "startDate": "2009-09-01",
       "endDate": "2011-08-01"
     }
@@ -110,36 +107,36 @@
       ]
     },
     {
-        "name": "Devops & Divers ",
+        "name": "Devops & Other ",
         "keywords": [
             "Docker",
             "Vagrant",
             "Ansible",
-            "Méthodes agiles (SCRUM, Kanban)",
+            "Agile Processes (SCRUM, Kanban)",
             "Git"
         ]
     }
   ],
   "languages": [
     {
-      "language": "Français",
-      "fluency": "Langue maternel"
+      "language": "French",
+      "fluency": "native language"
     },
     {
-      "language": "Anglais",
-      "fluency": "Professionel"
+      "language": "English",
+      "fluency": "professional"
     }
   ],
   "interests": [
     {
-      "name": "Sport",
+      "name": "Sports",
       "keywords": [
-        "Escalade",
-        "Ski"
+        "Climbing",
+        "Skiing"
       ]
     },
     {
-        "name": "Voyages"
+        "name": "Travel"
     }
   ]
 }
