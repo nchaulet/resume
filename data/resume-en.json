@@ -34,7 +34,7 @@
       "position": "Web Developer",
       "website": "http://www.mapado.com",
       "startDate": "2014-12-01",
-      "summary": "Working on www.mapado.com website.",
+      "summary": "Full stack developper on www.mapado.com events platform.",
       "highlights": [
       ]
     },
@@ -56,7 +56,7 @@
       "website": "http://www.mapado.com",
       "startDate": "2012-09-01",
       "endDate": "2014-09-01",
-      "summary": "Working for M6 Web(TV channel), as a web developer on high load websites and REST API (Symfony2, nodejs) and front-end development.",
+      "summary": "Working for M6 Web(TV channel), as a web developer on high load websites and second screen application and REST API (Symfony2, nodejs) and front-end development.",
       "highlights": [
       ]
     },
@@ -92,7 +92,8 @@
         "ReactJS",
         "AngularJS",
         "HTML / CSS",
-        "Webperf"
+        "Webperf",
+        "ES6/ES2015"
       ]
     },
     {
