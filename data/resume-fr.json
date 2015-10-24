@@ -7,8 +7,8 @@
     "website": "http://nchaulet.fr",
     "summary": "Développeur Web",
     "location": {
-      "city": "Lyon",
-      "countryCode": "FR"
+      "city": "Montréal",
+      "countryCode": "CA"
     },
     "profiles": [
       {
@@ -29,6 +29,14 @@
     ]
   },
   "work": [
+    {
+      "company": "Busbud",
+      "position": "Développeur",
+      "website": "http://www.busbud.com",
+      "startDate": "2015-10-19",
+      "highlights": [
+      ]
+    },
     {
       "company": "Mapado",
       "position": "Développeur Web",
@@ -57,7 +65,7 @@
       "website": "http://www.mapado.com",
       "startDate": "2012-09-01",
       "endDate": "2014-09-01",
-      "summary": "mission pour M6 Web, développement PHP (Symfony2), et Nodejs sur des sites.",
+      "summary": "mission pour M6 Web, développement PHP (Symfony2), et Nodejs.",
       "highlights": [
         "Développement sur des sites à fort traffic.",
         "API Rest",
@@ -124,7 +132,7 @@
   "languages": [
     {
       "language": "Français",
-      "fluency": "Langue maternel"
+      "fluency": "Langue maternelle"
     },
     {
       "language": "Anglais",

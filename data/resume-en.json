@@ -7,8 +7,8 @@
     "website": "http://nchaulet.fr",
     "summary": "Web Developer",
     "location": {
-      "city": "Lyon",
-      "countryCode": "FR"
+      "city": "Montreal",
+      "countryCode": "CA"
     },
     "profiles": [
       {
@@ -29,6 +29,14 @@
     ]
   },
   "work": [
+    {
+      "company": "Busbud",
+      "position": "Developer",
+      "website": "http://www.busbud.com",
+      "startDate": "2015-10-19",
+      "highlights": [
+      ]
+    },
     {
       "company": "Mapado",
       "position": "Web Developer",
