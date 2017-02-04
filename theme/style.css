@@ -1,99 +1,128 @@
 body {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .language-selector {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
 .jumbotron {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .jumbotron .container {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .jumbotron h1 {
-    font-size: 40px;
+    font-size: 2.5em;
     margin: 0;
     color: inherit;
 }
 
 .jumbotron h2 {
-    font-size: 30px;
+    font-size: 2em;
     margin: 0;
     color: inherit;
 }
 
 .social {
-    color: #475577;
+  color: #475577;
 }
 
 h1, h2, h3, h4 {
-    color: #475577;
-    font-weight: normal;
+  color: #475577;
+  font-weight: normal;
 }
 
 h2 {
-    font-weight: normal;
-    font-size: 24px;
+  font-weight: normal;
+  font-size: 1.5em;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 section.row:first-of-type {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 section.row {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 section h2 {
-    margin: 0;
-    text-align: right;
+  margin: 0;
+  text-align: right;
 }
 
 @media (max-width: 991px) {
-    section h2 {
-        text-align: left;
-        margin: 20px 0;
-    }
+  section h2 {
+    text-align: left;
+    margin: 20px 0;
+  }
 }
 
-
 section .col-content {
-    border-left: 1px solid #54ACD2;
-    padding-left: 20px;
+  border-left: 1px solid #54ACD2;
+  padding-left: 20px;
 }
 
 section h3 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 section .item:first-of-type h3{
-    margin-top: 0;
+  margin-top: 0;
 }
 
 ul.keywords {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 ul.keywords li {
-    display: inline-block;
-    background: #E4E4E4;
-    margin: 2px;
-    padding: 5px;
-    width: auto;
-    border-radius: 3px;
+  display: inline-block;
+  background: #E4E4E4;
+  margin: 2px;
+  padding: 5px;
+  width: auto;
+  border-radius: 3px;
 }
 
 .date {
-    font-size: .95em;
+  font-size: .95em;
+}
+
+@media print  {
+  body {
+    font-size: 11px;
+  }
+  .jumbotron {
+    padding: 0;
+  }
+  .jumbotron .container {
+    padding-bottom: 0;
+  }
+  .social {
+    font-size: 1.2em;
+  }
+
+  .social p {
+    margin: 0;
+  }
+
+  section h2 {
+    margin-top: 5px;
+  }
+  section.row {
+    margin-top: 5px;
+  }
+
+  section.row:first-of-type {
+    margin-top: 5px;
+  }
 }

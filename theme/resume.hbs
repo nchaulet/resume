@@ -27,7 +27,7 @@
     </script>
     </head>
     <body>
-    <div class="language-selector">
+    <div class="language-selector hidden-print">
         <a href="/">fr</a>
         <a href="/en.html">en</a>
     </div>
@@ -37,10 +37,15 @@
             <h1>{{name}}</h1>
             <h2>{{label}}</h2>
             <br/>
-            <div class="social">
+            <div class="social hidden-print">
                 <a href="mailto:{{email}}"><i class="fa fa-envelope fa-2x"></i></a>
                 {{#each profiles}}
                     <a href="{{url}}"><i class="fa fa-{{network}} fa-2x"> </i></a>
+                {{/each}}
+            </div>
+            <div class="social visible-print text-left">
+                {{#each profiles}}
+                    <p><i class="fa fa-{{network}}"> </i> {{url}}</p>
                 {{/each}}
             </div>
             {{/resume.basics}}
