@@ -8,21 +8,21 @@ body {
   top: 20px;
 }
 
-.jumbotron {
+.header {
   padding-bottom: 0;
 }
 
-.jumbotron .container {
+.header .container {
   padding-bottom: 30px;
 }
 
-.jumbotron h1 {
+.header h1 {
   font-size: 2.5em;
   margin: 0;
   color: inherit;
 }
 
-.jumbotron h2 {
+.header h2 {
   font-size: 2em;
   margin: 0;
   color: inherit;
