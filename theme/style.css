@@ -8,21 +8,21 @@ body {
   top: 20px;
 }
 
-.header {
+header {
   padding-bottom: 0;
 }
 
-.header .container {
+header .container {
   padding-bottom: 30px;
 }
 
-.header h1 {
+header h1 {
   font-size: 2.5em;
   margin: 0;
   color: inherit;
 }
 
-.header h2 {
+header h2 {
   font-size: 2em;
   margin: 0;
   color: inherit;
