@@ -1,7 +1,6 @@
-FROM node:0.12
+FROM node:8
 
 VOLUME ["/app"]
 WORKDIR /app
 
 CMD npm install && npm run build
-

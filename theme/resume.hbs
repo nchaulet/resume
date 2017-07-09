@@ -7,7 +7,7 @@
 
   <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
   <style>
@@ -43,7 +43,7 @@
         <a href="{{url}}"><i class="fa fa-{{network}} fa-2x"> </i></a>
         {{/each}}
       </div>
-      <div class="social visible-print text-left">
+      <div class="social visible-print-block text-left">
         {{#each profiles}}
         <p><i class="fa fa-{{network}}"> </i> {{url}}</p>
         {{/each}}
@@ -183,7 +183,9 @@
               {{#if keywords.length}}
               :
               {{#each keywords}}
-              <span>{{.}}</span>
+              <span>
+                {{.}}{{#unless @last}},&nbsp;{{/unless}}
+              </span>
               {{/each}}
               {{/if}}
             </div>

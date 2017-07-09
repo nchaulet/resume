@@ -5,17 +5,11 @@
     "build": "node index.js",
     "serve": "nodemon -e js,json,hbs,css --exec 'node index.js && node_modules/.bin/static dist'"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/erming/jsonresume-theme-boilerplate"
-  },
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.8.1",
-    "handlebars": "^2.0.0-alpha.4",
-    "i18n-js": "^1.0.0",
-    "moment": "^2.10.3",
-    "resume-cli": "^0.4.3"
+    "handlebars": "2.0.0",
+    "i18n-js": "1.0.0",
+    "moment": "^2.10.3"
   },
   "devDependencies": {
     "node-static": "^0.7.6",
